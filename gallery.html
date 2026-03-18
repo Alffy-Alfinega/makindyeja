@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Photo gallery of Makindye Junior Academy - classes, events, sports, and campus life">
+    <meta name="keywords" content="school gallery, photos, events, sports, campus life">
+    
+    <title>Gallery - Makindye Junior Academy</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-graduation-cap me-2"></i>
+                <span class="brand-text">Makindye Junior Academy</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="academics.html#nursery">Nursery</a></li>
+                            <li><a class="dropdown-item" href="academics.html#lower-primary">Lower Primary</a></li>
+                            <li><a class="dropdown-item" href="academics.html#upper-primary">Upper Primary</a></li>
+                            <li><a class="dropdown-item" href="academics.html#activities">Activities</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admissions.html">Admissions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <div class="page-header-content">
+                <h1>Gallery</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Gallery</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Filters -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="gallery-filters text-center mb-5">
+                        <h2 class="section-title mb-4">Our School Life in Pictures</h2>
+                        <div class="filter-buttons">
+                            <button class="btn btn-primary filter-btn active" data-filter="all">All Photos</button>
+                            <button class="btn btn-outline-primary filter-btn" data-filter="classes">Classes</button>
+                            <button class="btn btn-outline-primary filter-btn" data-filter="events">Events</button>
+                            <button class="btn btn-outline-primary filter-btn" data-filter="sports">Sports</button>
+                            <button class="btn btn-outline-primary filter-btn" data-filter="campus">Campus Life</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="row g-3">
+                    <!-- Classes Category -->
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="classes">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Classroom Learning" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Interactive Learning</h5>
+                                        <p>Students engaged in classroom activities</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="classes">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Reading Time" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Reading Time</h5>
+                                        <p>Students enjoying books in the library</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="classes">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1577896851231-70ef188817c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Science Class" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Science Experiment</h5>
+                                        <p>Hands-on science learning experience</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1577896851231-70ef188817c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="classes">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Mathematics Class" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Mathematics Class</h5>
+                                        <p>Students solving problems together</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="classes">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Computer Lab" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Computer Lab</h5>
+                                        <p>Digital learning in progress</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="classes">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Art Class" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Art Class</h5>
+                                        <p>Creative expression through art</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Events Category -->
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Graduation Ceremony" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Graduation Day</h5>
+                                        <p>Celebrating our P7 graduates</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="School Play" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>School Drama</h5>
+                                        <p>Annual school play performance</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1464207687429-7505649dae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Cultural Day" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Cultural Day</h5>
+                                        <p>Celebrating our diverse cultures</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="School Assembly" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>School Assembly</h5>
+                                        <p>Weekly student gathering</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Award Ceremony" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Award Ceremony</h5>
+                                        <p>Recognizing student excellence</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="events">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Open Day" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Open Day</h5>
+                                        <p>Parents visiting our school</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1517486808906-6ca8b3f9e468?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sports Category -->
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="sports">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Football Match" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Football Team</h5>
+                                        <p>Our school football team in action</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                                </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="sports">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Athletics" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Athletics Meet</h5>
+                                        <p>Annual sports day competitions</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="sports">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Basketball" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Basketball Practice</h5>
+                                        <p>Students practicing basketball skills</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="sports">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Volleyball" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Volleyball Match</h5>
+                                        <p>Inter-school volleyball competition</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1517466787929-bc90951d0974?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="sports">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Track and Field" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Track and Field</h5>
+                                        <p>Students participating in athletics</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="sports">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Sports Day" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Sports Day</h5>
+                                        <p>Annual inter-house sports competition</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1552667466-07770ae110d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Campus Life Category -->
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="campus">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Playground" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Playground Fun</h5>
+                                        <p>Students enjoying break time</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="campus">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="School Garden" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>School Garden</h5>
+                                        <p>Students learning about agriculture</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="campus">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Computer Lab" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>Computer Lab</h5>
+                                        <p>Digital learning in progress</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="campus">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="School Library" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>School Library</h5>
+                                        <p>Quiet reading and study space</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="campus">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="School Cafeteria" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>School Cafeteria</h5>
+                                        <p>Nutritious meals for students</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1577896851231-70ef188817c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 gallery-item" data-category="campus">
+                        <div class="gallery-card animate-on-scroll">
+                            <div class="gallery-image">
+                                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="School Campus" class="img-fluid">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-content">
+                                        <h5>School Campus</h5>
+                                        <p>Beautiful school grounds</p>
+                                        <button class="btn btn-light btn-sm view-image" data-image="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80">
+                                            <i class="fas fa-search-plus"></i> View
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Gallery Stats -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Gallery Statistics</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center animate-on-scroll">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Total Photos</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center animate-on-scroll">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Events Covered</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center animate-on-scroll">
+                        <div class="stat-number" data-target="12">0</div>
+                        <div class="stat-label">Categories</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card text-center animate-on-scroll">
+                        <div class="stat-number" data-target="1000">0</div>
+                        <div class="stat-label">Happy Memories</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Upload Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="upload-section text-center animate-on-scroll">
+                        <h2 class="section-title mb-4">Share Your Memories</h2>
+                        <p class="lead mb-4">Parents and students can share their school photos with us</p>
+                        <div class="upload-info">
+                            <div class="row g-4">
+                                <div class="col-lg-4">
+                                    <div class="upload-card">
+                                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                                        <h5>Upload Photos</h5>
+                                        <p>Share your school event photos</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="upload-card">
+                                        <i class="fas fa-shield-alt upload-icon"></i>
+                                        <h5>Safe & Secure</h5>
+                                        <p>All photos are reviewed before posting</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="upload-card">
+                                        <i class="fas fa-share-alt upload-icon"></i>
+                                        <h5>Share with Community</h5>
+                                        <p>Build our school memory together</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <a href="contact.html" class="btn btn-primary btn-lg">
+                                <i class="fas fa-envelope me-2"></i>Contact to Upload Photos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        <h4>Makindye Junior Academy</h4>
+                        <p>Nurturing young minds for a brighter future through quality education and holistic development.</p>
+                    </div>
+                    <div class="social-links mt-3">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5>Contact Info</h5>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt me-2"></i>Makindye, Kampala, Uganda</li>
+                        <li><i class="fas fa-phone me-2"></i>+256 414 123456</li>
+                        <li><i class="fas fa-mobile me-2"></i>+256 777 123456</li>
+                        <li><i class="fas fa-envelope me-2"></i>info@makindyejunioracademy.ug</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Office Hours</h5>
+                    <ul class="office-hours">
+                        <li><strong>Monday - Friday:</strong> 7:30 AM - 5:00 PM</li>
+                        <li><strong>Saturday:</strong> 8:00 AM - 1:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Makindye Junior Academy. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Designed with <i class="fas fa-heart text-danger"></i> for quality education</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

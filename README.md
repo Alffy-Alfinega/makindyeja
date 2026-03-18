@@ -1,2 +1,1 @@
-# makindyeja
-Makindye junior academy
+# makindye-ja
